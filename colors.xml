@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_dark_purple">#1A1820</color> <color name="surface_purple">#2C2A4A</color> <color name="primary_accent">#9E7BFF</color> <color name="text_primary_light">#FFFFFF</color>
+    <color name="text_secondary_light">#E0E0E0</color>
+
+    <color name="status_completed">#4CAF50</color>
+    <color name="status_pending">#FFC107</color>
+    <color name="status_failed">#F44336</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

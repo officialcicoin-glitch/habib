@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@color/background_dark_purple"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo Anda"
+        android:textColor="@color/text_secondary_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00000000 Cicoin"
+        android:textColor="@color/text_primary_light"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnStartMining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Mining (24 Jam)"
+        android:backgroundTint="@color/primary_accent"
+        android:textColor="@color/white"
+        android:layout_marginTop="48dp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sisa waktu: 00:00:00"
+        android:textColor="@color/text_primary_light"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btnShowAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dapat Bonus (0.0002 Cicoin)"
+        android:backgroundTint="@color/surface_purple"
+        android:textColor="@color/white"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btnWithdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Withdraw (Min 0.01 Cicoin)"
+        android:backgroundTint="@color/surface_purple"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
+    
+    <TextView
+        android:id="@+id/tvHistoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Riwayat Transaksi Terakhir"
+        android:textColor="@color/text_primary_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:listitem="@layout/item_transaction"/>
+    
+</LinearLayout>
